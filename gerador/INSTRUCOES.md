@@ -93,3 +93,6 @@ Mande uma mensagem curta em português para o David, por SendUserMessage e na re
 - o link do roteiro atualizado.
 
 Se algo falhar (push, Metricool, render), diga claramente o que ficou pendente.
+
+## Datas comemorativas
+Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do repo): nas datas listadas, um post do dia vira o post temático.

@@ -34,3 +34,6 @@ Quer música ao vivo na sua cerimônia? Chama no direct.
 4. Commit + push e use URLs raw fixadas no hash do commit:
    `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/<hash>/vivavoz/<dia>/<slug>/NN.jpg`
 5. Agende com createScheduledPost: providers `[{"network":"instagram"}]`, instagramData `{"type":"POST","collaborators":[],"showReelOnFeed":true}`, text = legenda.
+
+## Datas comemorativas
+Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do repo): nas datas listadas, um post do dia vira o post temático.
