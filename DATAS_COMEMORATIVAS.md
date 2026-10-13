@@ -23,5 +23,6 @@ Regra da tarefa semanal: quando um dos 7 dias gerados cair numa data abaixo (ou 
 | 08/08/2027 | Dia dos Pais (2º domingo) | Pais empreendedores | Entrada da noiva com o pai: músicas |
 | 15/09 | Dia do Cliente | Como encantar o cliente | Depoimento/gratidão aos casais atendidos |
 | 12/10 | Dia das Crianças | — | Daminhas e pajens: músicas para a entrada |
+| 15/10 | **Aniversário do Viva Voz (fundado em 15/10/2004)** | — | Post de aniversário às 20h (2027 = 23 anos). Nunca invente números de casamentos atendidos. |
 
 Ao gerar a semana, consulte esta tabela antes de escrever os temas.
