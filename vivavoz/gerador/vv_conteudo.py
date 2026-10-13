@@ -1,6 +1,6 @@
 # Viva Voz Casamentos: semana 1 (14 a 20/10/2026), 3 carrosséis por dia.
 # Tipos: musica (músicas por momento / gospel x popular), dica (dicas para noivos), engaja (engajamento).
-CTA = "👉 Siga @vivavozcasamentos e salve este post para o seu casamento.\nQuer música ao vivo na sua cerimônia? Chama no direct."
+CTA = "👉 Siga @vivavozcasamentos e salve este post para o seu casamento.\nQuer música ao vivo na sua cerimônia? Chama no direct.\n📸 E para eternizar cada momento, conheça a @davidsafotografia."
 TAGS = {
     "musica": "#musicaparacasamento #casamento #cerimonia #noivas2026 #vivavozcasamentos",
     "dica": "#casamento #noivas2026 #dicasparanoivas #cerimonia #vivavozcasamentos",
