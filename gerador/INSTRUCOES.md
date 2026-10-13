@@ -31,7 +31,7 @@ Crie `gerador/serie_loteN.py`, com N sendo o próximo número.
 ```python
 import sys, os
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
-from serie_base import X, montar
+from serie_base import X, montar, FOTOS_TODAS
 from datetime import date
 MKT = [ X("mkt","m0NN","Tema","Kicker curto","Título com <em>destaque</em>",
           [("Subtítulo 1",["frase"]),("Subtítulo 2",["frase"]),("Subtítulo 3",["frase"]),("Subtítulo 4",["frase"])],
@@ -39,7 +39,7 @@ MKT = [ X("mkt","m0NN","Tema","Kicker curto","Título com <em>destaque</em>",
           "Gancho da legenda (1 ou 2 frases).",
           "Chamada para comentar","#tag1 #tag2"), ... 21 itens ]
 REL = [ ... 21 itens com "rel" e slugs r0NN ... ]
-DIAS = montar(MKT, REL, date(AAAA, M, D), 7, offset=N)
+DIAS = montar(MKT, REL, date(AAAA, M, D), 7, offset=N, fotos=FOTOS_TODAS)
 ```
 
 Regras de cada carrossel:
