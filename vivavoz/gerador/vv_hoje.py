@@ -1,0 +1,32 @@
+from vv_conteudo import C as _C, HORAS
+HORAS.update({"musica":"16:00","dica":"18:00","engaja":"20:00"})
+C=_C
+CARROSSEIS = [
+C("2026-10-13", "musica", "entrada-dos-padrinhos", "Músicas por momento", "Entrada dos padrinhos",
+  "5 músicas para os <em>padrinhos</em>", "Leves e alegres, para abrir a cerimônia com sorriso no rosto.",
+  [dict(num="01", h="Pop leve", songs=[(1,"Lucky","Jason Mraz e Colbie Caillat","popular"),(2,"Sugar","Maroon 5","popular")]),
+   dict(num="02", h="Brasileira", songs=[(3,"Tocando em Frente","Almir Sater","mpb")]),
+   dict(num="03", h="Gospel", songs=[(4,"Ousado Amor","Isaías Saad","gospel"),(5,"Quão Grande És Tu","Hino tradicional","gospel")]),
+   dict(num="04", h="Dica", p="Com muitos casais de padrinhos, escolha uma música com <b>refrão que se repete</b>. Assim ela pode ser estendida sem perder o clima.")],
+  "Qual abriria a sua cerimônia?",
+  "A entrada dos padrinhos abre a cerimônia e dá o tom de tudo o que vem depois.",
+  "Separamos 5 músicas para esse momento. Qual seria a sua? 👇"),
+C("2026-10-13", "dica", "definir-estilo-musical", "Dicas para noivos", "Antes de escolher",
+  "4 perguntas para definir o <em>estilo</em> do seu casamento", "Responda juntos antes de montar o repertório.",
+  [dict(num="01", h="Qual é a história de vocês?", p="Músicas que marcaram o namoro, a fé do casal, a cidade onde se conheceram. Tudo isso vira repertório."),
+   dict(num="02", h="Qual é o clima da cerimônia?", p="Íntima e emocionante, clássica e elegante ou alegre e descontraída? O clima guia cada escolha."),
+   dict(num="03", h="O que querem que os convidados sintam?", p="Emoção, alegria, fé, nostalgia. Pensar no convidado ajuda a escolher a hora de cada música."),
+   dict(num="04", h="Onde vai ser?", p="Igreja, salão, praia ou campo. O local muda o som, a formação dos músicos e até o tempo das entradas.")],
+  "Qual dessas vocês já responderam?",
+  "Antes de escolher música por música, vale responder 4 perguntas juntos. Elas definem o estilo do casamento.",
+  "Salva e responde com o seu amor 👇"),
+C("2026-10-13", "engaja", "primeira-danca", "Enquete", "Primeira dança",
+  "Como seria a primeira <em>dança</em> de vocês?", "Conta pra gente o estilo do casal.",
+  [dict(num="A", h="Romântica e lenta", p="Abraçados, devagar, sem se preocupar com os passos."),
+   dict(num="B", h="Animada", p="Começa calma e vira festa no meio da música."),
+   dict(num="C", h="Coreografada", p="Ensaiaram semanas e vão surpreender todo mundo."),
+   dict(num="D", h="Sem primeira dança", p="Vocês preferem chamar todo mundo para a pista de uma vez.")],
+  "A, B, C ou D?",
+  "A primeira dança é um dos momentos mais esperados da festa. Como seria a de vocês?",
+  "Responde com a letra e marca o seu amor 👇"),
+]
