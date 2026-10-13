@@ -6,20 +6,19 @@ UP = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fotos") + "/"
 FOTOS = [
     (UP + "1001343507.jpg", "50% 20%", 1.0),   # blazer
     (UP + "1001343512.jpg", "50% 25%", 1.0),   # intenso
-    (UP + "1001343509.jpg", "49% 38%", 1.7),   # fala
+    (UP + "1001343509.jpg", "49% 30%", 1.0),   # fala
     (UP + "1001343506.jpg", "45% 30%", 1.0),   # sorri
-    (UP + "1001343510.jpg", "50% 44%", 1.7),   # pensa
-    (UP + "1001343508.jpg", "50% 44%", 1.7),   # café
+    (UP + "1001343510.jpg", "50% 30%", 1.0),   # pensa
+    (UP + "1001343508.jpg", "50% 30%", 1.0),   # café
 ]
 
 # Fotos enviadas em 12/10 (usadas a partir do lote 4). Os lotes 1 a 3 continuam com FOTOS.
+# Só fotos com cara profissional: selfies, frames de vídeo e fotos de celular ficam de fora (o David é fotógrafo).
 NOVAS = [
-    ("moeda", "50% 30%", 1.0), ("risada-mesa", "50% 28%", 1.0), ("carro-oculos", "50% 30%", 1.0),
+    ("moeda", "50% 30%", 1.0),
     ("estudio-celular", "50% 25%", 1.0), ("blazer-preto", "50% 20%", 1.0), ("camera", "50% 8%", 1.0),
-    ("blazer-escritorio", "50% 20%", 1.0), ("carro-selfie", "50% 30%", 1.0), ("jardim", "42% 0%", 1.0),
-    ("carro-oculos2", "50% 32%", 1.0), ("parede-cinza", "50% 25%", 1.0), ("blazer-oculos", "50% 20%", 1.0),
-    ("camiseta-azul", "50% 22%", 1.0), ("camiseta-marrom", "50% 22%", 1.0), ("perfil-fone", "50% 30%", 1.0),
-    ("mao-no-rosto", "50% 35%", 1.0),
+    ("blazer-escritorio", "50% 20%", 1.0), ("jardim", "42% 0%", 1.0), ("parede-cinza", "50% 25%", 1.0), ("blazer-oculos", "50% 20%", 1.0),
+    ("camiseta-azul", "50% 22%", 1.0), ("camiseta-marrom", "50% 22%", 1.0),
     ("mao-no-queixo", "50% 25%", 1.0), ("palestra-tela", "inteira", 1.0), ("piscina", "42% 15%", 1.0),
     ("palestra-casal", "inteira", 1.0), ("palestra-iluminacao", "inteira", 1.0),
 ]

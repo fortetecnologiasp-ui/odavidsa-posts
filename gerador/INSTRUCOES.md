@@ -22,6 +22,7 @@ São 3 de marketing e 3 de relacionamento por dia, intercalados (m, r, m, r, m, 
   - conselho médico ou psicológico de diagnóstico;
   - conteúdo íntimo/sexual explícito.
 - **Palestras:** o David palestrou uma única vez, no Light Day (evento sobre iluminação para casamentos). As fotos de palco (`palestra-*.jpg`) podem ser capa, mas o texto nunca pode dizer ou insinuar que ele faz palestras com frequência (nada de "nas minhas palestras", "palestrante"). Se citar, cite só o Light Day.
+- **Qualidade da foto é prioridade:** a empresa principal do David é a David Sá Fotografia, então nada pode parecer amador. Use só as fotos de `FOTOS_TODAS`. Nunca coloque selfie, print, frame de vídeo ou foto de celular, e nunca use zoom acima de 1.0 (ele borra a imagem). Foto horizontal entra com `"inteira"`. Na conferência visual, se alguma capa sair borrada, escura ou mal cortada, troque a foto daquele carrossel antes de publicar.
 - **Não repita temas nem títulos** já usados. Antes de escrever, leia os títulos de todos os `serie_lote*.py`.
 - **Tom e idioma:** português do Brasil, direto, prático, frases curtas. Use o mesmo estilo dos lotes anteriores (copie a estrutura de `serie_lote3.py`).
 
