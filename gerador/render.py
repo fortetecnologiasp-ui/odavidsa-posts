@@ -78,13 +78,21 @@ def page(body, c=None):
     extra = c.get("css","") if c else ""
     return f"<!doctype html><html><head><meta charset='utf-8'><style>{CSS}{extra}</style></head><body>{body}</body></html>"
 
+def capa_img(c, img):
+    """Foto da capa. Com c['inteira']=True a foto aparece inteira (sem corte nem zoom) no alto, sobre um fundo desfocado dela mesma."""
+    if c.get("inteira"):
+        return (f'<img src="data:image/jpeg;base64,{img}" style="filter:blur(40px) brightness(.35); transform:scale(1.15)">'
+                f'<img src="data:image/jpeg;base64,{img}" style="inset:auto; top:{c.get("topo",150)}px; left:0; width:100%; height:auto; object-fit:contain">')
+    return (f'<img src="data:image/jpeg;base64,{img}" style="object-position:{c["foco"]}; '
+            f'transform:scale({c.get("zoom",1)}); transform-origin:{c["foco"]}">')
+
 def cover(c, total):
     img = b64(c["foto"])
     return page(f"""
 <div class="s cover">
-  <img src="data:image/jpeg;base64,{img}" style="object-position:{c['foco']}; transform:scale({c.get('zoom',1)}); transform-origin:{c['foco']}">
+  {capa_img(c, img)}
   <div class="shade"></div>
-  <div class="top"><span class="pill">{c.get('pill', 'Plano de governo · ' + c['tema'])}</span><span class="handle">@odavidsa</span></div>
+  <div class="top"><span class="pill">{c.get('pill', 'Plano de governo · ' + c['tema'])}</span><span class="handle">{c.get('handle','@odavidsa')}</span></div>
   <div class="txt"><div class="kicker">{c['kicker']}</div><h1>{c['titulo']}</h1></div>
   <div class="swipe"><span>{c.get('rodape', 'Flávio Bolsonaro · 2º turno')}</span><span>Arraste →</span></div>
 </div>""", c)
@@ -97,7 +105,7 @@ def content(c, i, title, bullets, total):
   <div class="num">{i:02d}</div>
   <h2>{title}</h2>
   <ul>{lis}</ul>
-  <div class="foot"><span class="h">@odavidsa</span><span>{c.get('fc','Fonte: plano registrado no TSE')}</span></div>
+  <div class="foot"><span class="h">{c.get('handle','@odavidsa')}</span><span>{c.get('fc','Fonte: plano registrado no TSE')}</span></div>
 </div>""", c)
 
 def final(c, total):

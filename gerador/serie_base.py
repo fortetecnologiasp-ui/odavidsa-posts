@@ -16,12 +16,12 @@ FOTOS = [
 NOVAS = [
     ("moeda", "50% 30%", 1.0), ("risada-mesa", "50% 28%", 1.0), ("carro-oculos", "50% 30%", 1.0),
     ("estudio-celular", "50% 25%", 1.0), ("blazer-preto", "50% 20%", 1.0), ("camera", "50% 8%", 1.0),
-    ("blazer-escritorio", "50% 20%", 1.0), ("carro-selfie", "50% 30%", 1.0), ("jardim", "42% 2%", 1.7),
+    ("blazer-escritorio", "50% 20%", 1.0), ("carro-selfie", "50% 30%", 1.0), ("jardim", "42% 0%", 1.0),
     ("carro-oculos2", "50% 32%", 1.0), ("parede-cinza", "50% 25%", 1.0), ("blazer-oculos", "50% 20%", 1.0),
     ("camiseta-azul", "50% 22%", 1.0), ("camiseta-marrom", "50% 22%", 1.0), ("perfil-fone", "50% 30%", 1.0),
     ("mao-no-rosto", "50% 35%", 1.0),
-    ("mao-no-queixo", "50% 25%", 1.0), ("palestra-tela", "28% 35%", 1.6), ("piscina", "42% 20%", 1.7),
-    ("palestra-casal", "56% 35%", 1.2), ("palestra-iluminacao", "47% 35%", 1.2),
+    ("mao-no-queixo", "50% 25%", 1.0), ("palestra-tela", "inteira", 1.0), ("piscina", "42% 15%", 1.0),
+    ("palestra-casal", "inteira", 1.0), ("palestra-iluminacao", "inteira", 1.0),
 ]
 FOTOS_TODAS = FOTOS + [(UP + n + ".jpg", f, z) for n, f, z in NOVAS]
 
@@ -73,6 +73,7 @@ def montar(mkt, rel, inicio, ndias, offset=0, fotos=None):
         lista = [mkt[3*d], rel[3*d], mkt[3*d+1], rel[3*d+1], mkt[3*d+2], rel[3*d+2]]
         for i, c in enumerate(lista):
             f, foco, zoom = fotos[(6 * d + i + offset) % len(fotos)] if len(fotos) > 6 else fotos[(i + d + offset) % len(fotos)]
-            c.update(foto=f, foco=foco, zoom=zoom)
+            inteira = foco == "inteira"
+            c.update(foto=f, foco=("50% 40%" if inteira else foco), zoom=zoom, inteira=inteira)
         dias[dia] = lista
     return dias
