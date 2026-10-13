@@ -4,7 +4,7 @@ import json, re, datetime, os, sys
 AQUI = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, AQUI)
 import serie_todos as s
 auto = json.load(open(os.path.join(AQUI, "auto.json")))
-HORAS = ['12:30','14:00','16:00','17:00','19:00','20:00']
+HORAS = ['09:00','11:00','13:00','15:00','17:00','19:00']
 SEM = ['seg','ter','qua','qui','sex','sáb','dom']
 hoje = datetime.date.today(); corte = hoje - datetime.timedelta(days=3)
 data = []

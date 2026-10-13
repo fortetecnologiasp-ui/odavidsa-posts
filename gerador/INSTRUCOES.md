@@ -70,7 +70,7 @@ O David assinou o plano **Starter** do Metricool: não há mais limite de 20 pos
 
 1. Depois do push, pegue o hash do commit (`git rev-parse --short HEAD`). As URLs de mídia usam esse hash, não `main`, para evitar cache antigo da CDN: `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/<hash>/series/<dia>/<slug>/0N.jpg`, de 01 a 06.
 2. Use `getScheduledPosts` (blogId 7381311) para os dias novos e não duplique o que já existir.
-3. Agende cada carrossel com `createScheduledPost` nos horários **12:30, 14:00, 16:00, 17:00, 19:00 e 20:00** (na ordem do dia):
+3. Agende cada carrossel com `createScheduledPost` nos horários **09:00, 11:00, 13:00, 15:00, 17:00 e 19:00** (na ordem do dia):
    - `date` = `"AAAA-MM-DDTHH:MM:00-03:00"`;
    - `info` = `{"autoPublish":true,"descendants":[],"draft":false,"firstCommentText":"","hasNotReadNotes":false,"media":[6 URLs],"mediaAltText":[],"providers":[{"network":"instagram"}],"publicationDate":{"dateTime":"AAAA-MM-DDTHH:MM:00","timezone":"America/Sao_Paulo"},"shortener":false,"smartLinkData":{"ids":[]},"text":<legenda do carrossel>,"instagramData":{"type":"POST","collaborators":[],"showReelOnFeed":true}}`.
 4. Se o Metricool recusar algum post, pare, registre quais ficaram de fora e avise o David.
