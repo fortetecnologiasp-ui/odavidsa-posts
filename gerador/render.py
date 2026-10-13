@@ -134,7 +134,7 @@ def main(only=None):
             for n, h in enumerate(htmls, 1):
                 pg.set_content(h, wait_until="load")
                 pg.wait_for_timeout(150)
-                pg.screenshot(path=os.path.join(d, f"{n:02d}.jpg"), type="jpeg", quality=92)
+                pg.screenshot(path=os.path.join(d, f"{n:02d}.jpg"), type="jpeg", quality=95)
             print(c["slug"], len(htmls))
         br.close()
 
