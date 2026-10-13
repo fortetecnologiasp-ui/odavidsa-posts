@@ -24,8 +24,8 @@ for dia in sorted(s.DIAS):
     data.append(dict(id=dia, dia=f"{SEM[dt.weekday()]}, {dt.day:02d}/{dt.month:02d}", posts=posts))
 ini, fim = data[0]['id'], data[-1]['id']
 fmt = lambda d: f"{d[8:10]}/{d[5:7]}"
-intro = (f"Carrosséis de {fmt(ini)} a {fmt(fim)}, seis por dia. Os marcados como automáticos saem sozinhos pelo "
-         "Metricool; os outros você posta no app do Instagram.")
+intro = (f"Carrosséis de {fmt(ini)} a {fmt(fim)}, seis por dia, todos agendados para sair sozinhos pelo "
+         "Metricool. Use esta página para conferir o que vai ao ar.")
 t = open(os.path.join(AQUI, "roteiro2_template.html")).read()
 t = t.replace("__INTRO__", intro).replace("__DATA__", json.dumps(data, ensure_ascii=False).replace("</", "<\\/"))
 out = os.path.join(AQUI, "..", "roteiro-series.html")

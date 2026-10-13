@@ -66,23 +66,17 @@ Depois de escrever o lote:
 
 ## Agendamento no Metricool
 
-O plano gratuito permite **20 posts publicados por mês**. Rascunhos não contam.
+O David assinou o plano **Starter** do Metricool: não há mais limite de 20 posts por mês. **Todos os 6 carrosséis de cada dia são agendados como automáticos.**
 
-1. Use `getScheduledPosts` (blogId 7381311) para contar os posts **não rascunho** do mês de cada dia novo, já publicados ou pendentes.
-2. Para cada dia novo, em ordem de data, se ainda houver cota no mês, agende **1 post automático**:
-   - **dia par do mês:** o 5º carrossel do dia (marketing), às **19:00**;
-   - **dia ímpar do mês:** o 6º carrossel do dia (relacionamento), às **20:00**.
-3. Se não houver cota, esse dia fica todo manual. **Nunca** passe de 20 por mês.
-4. Se o Metricool recusar por limite, pare de agendar.
-5. Payload de `createScheduledPost`:
+1. Depois do push, pegue o hash do commit (`git rev-parse --short HEAD`). As URLs de mídia usam esse hash, não `main`, para evitar cache antigo da CDN: `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/<hash>/series/<dia>/<slug>/0N.jpg`, de 01 a 06.
+2. Use `getScheduledPosts` (blogId 7381311) para os dias novos e não duplique o que já existir.
+3. Agende cada carrossel com `createScheduledPost` nos horários **12:30, 14:00, 16:00, 17:00, 19:00 e 20:00** (na ordem do dia):
    - `date` = `"AAAA-MM-DDTHH:MM:00-03:00"`;
-   - `info` = `{"autoPublish":true,"descendants":[],"draft":false,"firstCommentText":"","hasNotReadNotes":false,"media":[6 URLs],"mediaAltText":[],"providers":[{"network":"instagram"}],"publicationDate":{"dateTime":"AAAA-MM-DDTHH:MM:00","timezone":"America/Sao_Paulo"},"shortener":false,"smartLinkData":{"ids":[]},"text":<legenda do carrossel>,"instagramData":{"type":"POST","collaborators":[],"showReelOnFeed":true}}`;
-   - as URLs de mídia são `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/main/series/<dia>/<slug>/0N.jpg`, de 01 a 06. Faça o push **antes** de agendar.
-6. Registre cada post agendado em `gerador/auto.json` como `"slug": {"dia": "...", "hora": "HH:MM"}`, depois faça commit e push.
+   - `info` = `{"autoPublish":true,"descendants":[],"draft":false,"firstCommentText":"","hasNotReadNotes":false,"media":[6 URLs],"mediaAltText":[],"providers":[{"network":"instagram"}],"publicationDate":{"dateTime":"AAAA-MM-DDTHH:MM:00","timezone":"America/Sao_Paulo"},"shortener":false,"smartLinkData":{"ids":[]},"text":<legenda do carrossel>,"instagramData":{"type":"POST","collaborators":[],"showReelOnFeed":true}}`.
+4. Se o Metricool recusar algum post, pare, registre quais ficaram de fora e avise o David.
+5. Registre cada post agendado em `gerador/auto.json` como `"slug": {"dia": "...", "hora": "HH:MM"}`, depois faça commit e push.
 
-Se o David tiver assinado um plano pago e o limite não existir mais, ele vai avisar. Até lá, siga a regra acima.
-
-## Roteiro (página de postagem manual)
+## Roteiro (página de conferência)
 
 1. Rode `python3 gerador/montar_roteiro.py`. Ele grava `roteiro-series.html` na raiz do repositório e não deve ser commitado.
 2. Leia o artifact `https://claude.ai/artifact/QbDitqymz8rsW5Qc5ixjSZ` com a ação read.
@@ -93,7 +87,7 @@ Se o David tiver assinado um plano pago e o limite não existir mais, ele vai av
 Mande uma mensagem curta em português para o David, por SendUserMessage e na resposta final, com:
 
 - os dias gerados;
-- quais posts ficaram automáticos;
-- o lembrete de que os outros estão no roteiro.
+- quantos posts foram agendados (6 por dia, todos automáticos);
+- o link do roteiro atualizado.
 
 Se algo falhar (push, Metricool, render), diga claramente o que ficou pendente.
