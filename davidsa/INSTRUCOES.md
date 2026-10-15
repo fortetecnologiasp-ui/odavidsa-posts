@@ -24,7 +24,7 @@ Frase emocional com os nomes do casal (sem descrever o que a foto mostra), chama
 🎶 E para a trilha sonora do seu grande dia, conheça a @vivavozcasamentos.
 ```
 Hashtags: #casamento #fotografiadecasamento #noivos #<cidade> #weddingphotography #davidsafotografia
-Gerador de exemplo: `gerar_ste.py`.
+Exemplo de legendas já usadas: `agenda_stephanie_alisson.json` (não repita as mesmas frases em sequência).
 
 ## Carrosséis
 Quando TODAS as fotos de um casal já tiverem sido agendadas como post único, criar carrosséis desse casal (até 10 fotos cada, separando horizontais de verticais; fotos podem se repetir nos carrosséis), nos mesmos horários.
