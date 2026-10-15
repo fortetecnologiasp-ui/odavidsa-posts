@@ -28,3 +28,7 @@ Gerador de exemplo: `gerar_ste.py`.
 
 ## Carrosséis
 Quando TODAS as fotos de um casal já tiverem sido agendadas como post único, criar carrosséis desse casal (até 10 fotos cada, separando horizontais de verticais; fotos podem se repetir nos carrosséis), nos mesmos horários.
+
+## Situação (15/10/2026)
+- Stephanie & Alisson (subpasta "Stephanie & Alisson", info: Paraibuna): as 55 fotos da pasta já estão agendadas como post único (15/10 17h até 21/10 08h). Próximo passo: carrosséis desse casal a partir de 21/10 09:30, a menos que o David suba fotos novas na pasta (aí as novas entram primeiro como post único).
+- Rascunhos com o texto "APAGAR - foto da pasta errada" no Metricool (15/10 16h e 21/10 09:30 a 22/10 21:30) são lixo: ignore e não reaproveite.
