@@ -13,8 +13,9 @@
 - Não mexer no tamanho: a foto vai como está (sem corte/zoom). Formatos fora de 4:5 a 1,91:1 o Instagram pode ajustar.
 
 ## Onde estão as fotos
-- Pastas por casal dentro de "David Sá Fotografia - Instagram" (cada uma com info.txt/info.rtf: nomes, local, detalhes). Use só o que estiver no info; nunca invente detalhes da foto ou do casamento.
-- Stephanie & Alisson (Paraibuna): fotos na pasta "Final Ste e Alisson" (id 1Rk8t1B1hqv0PCANXnKfkxl-Gr17pHvqv). A paginação do Drive repete resultados: liste por janelas de `createdTime`.
+- **SOMENTE** as subpastas de casal dentro da pasta "David Sá Fotografia - Instagram" (cada uma com info.txt/info.rtf: nomes, local, detalhes). **Nunca use fotos de nenhuma outra pasta do Drive**, mesmo que pareçam do mesmo casal. Se a subpasta estiver vazia, não poste nada desse casal.
+- Use só o que estiver no info; nunca invente detalhes da foto ou do casamento.
+- A paginação do Drive pode repetir resultados: se passar de 100 fotos, liste por janelas de `createdTime`.
 
 ## Legenda
 Frase emocional com os nomes do casal (sem descrever o que a foto mostra), chamada para comentar/marcar/salvar, depois:
