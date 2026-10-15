@@ -29,6 +29,11 @@ Exemplo de legendas já usadas: `agenda_stephanie_alisson.json` (não repita as 
 ## Carrosséis
 Quando TODAS as fotos de um casal já tiverem sido agendadas como post único, criar carrosséis desse casal (até 10 fotos cada, separando horizontais de verticais; fotos podem se repetir nos carrosséis), nos mesmos horários.
 
+## Como saber se a foto é horizontal ou vertical
+O Drive não informa as dimensões. Baixe cada foto com `download_file_content` (o resultado grande é salvo num arquivo .txt em JSON com o campo `content` em base64), decodifique com Python + PIL (`ImageOps.exif_transpose`) e leia largura x altura. Apague os arquivos depois. Dimensões já medidas ficam em `dimensoes_fotos.json`.
+Fotos verticais 2:3 são ajustadas pelo Instagram para 4:5 (limite da rede); horizontais 3:2 entram inteiras.
+
 ## Situação (15/10/2026)
-- Stephanie & Alisson (subpasta "Stephanie & Alisson", info: Paraibuna): as 55 fotos da pasta já estão agendadas como post único (15/10 17h até 21/10 08h). Próximo passo: carrosséis desse casal a partir de 21/10 09:30, a menos que o David suba fotos novas na pasta (aí as novas entram primeiro como post único).
-- Rascunhos com o texto "APAGAR - foto da pasta errada" no Metricool (15/10 16h e 21/10 09:30 a 22/10 21:30) são lixo: ignore e não reaproveite.
+- Stephanie & Alisson: 55 posts únicos (15/10 17h → 21/10 08h) + 9 carrosséis em 21/10 (09h30 → 21h30), separados por orientação, em ordem do dia (noivo, entrada, cerimônia, altar, saída, família, festa, favoritas, detalhes). Ver `carrosseis_stephanie_alisson.json`. Esse casal está concluído.
+- 22/10 em diante: livre para o próximo casal (Marcela & Felipe, Laura & Renan quando tiverem fotos).
+- Rascunhos com o texto "APAGAR - foto da pasta errada" no Metricool (15/10 16h e 22/10) são lixo: ignore.
