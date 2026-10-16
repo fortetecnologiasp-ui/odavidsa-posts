@@ -37,3 +37,11 @@ Quer música ao vivo na sua cerimônia? Chama no direct.
 
 ## Datas comemorativas
 Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do repo): nas datas listadas, um post do dia vira o post temático.
+
+## Stories (Instagram)
+- Os slides de cada carrossel do dia também viram stories, em sequência, 5 min depois do post do feed:
+  carrossel das 10h → stories 10:05, 10:06, …; 15h → 15:05…; 20h → 20:05… (um story por slide, na ordem).
+- Gerar com `python3 vivavoz/gerador/vv_story.py` (função `carrossel(pasta_slides, saida)`): 1080x1920, fundo = slide desfocado/escurecido, slide centralizado, "@vivavozcasamentos" embaixo.
+- Arquivos em `vivavoz/stories/AAAA-MM-DD/<slug>/NN.jpg`; commitar e usar a URL raw fixada no hash do commit.
+- Metricool (brand 7401168): providers `[{"network":"instagram"}]`, `instagramData {"type":"STORY","collaborators":[],"showReelOnFeed":true}`, sem texto.
+- Status: stories já agendados de 16/10 a 20/10 (75 stories).
