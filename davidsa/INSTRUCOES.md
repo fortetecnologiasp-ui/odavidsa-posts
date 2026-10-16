@@ -29,6 +29,13 @@ Exemplo de legendas já usadas: `agenda_stephanie_alisson.json` (não repita as 
 ## Carrosséis
 Quando TODAS as fotos de um casal já tiverem sido agendadas como post único, criar carrosséis desse casal (até 10 fotos cada, separando horizontais de verticais; fotos podem se repetir nos carrosséis), nos mesmos horários.
 
+## Stories (só Instagram)
+- Todo dia, **as mesmas 10 fotos do feed daquele dia** viram 10 stories em sequência: **10:00, 10:01, 10:02 … 10:09**, na ordem do feed. Em dia de carrossel, use a 1ª foto de cada carrossel.
+- Arte 1080x1920 gerada por `davidsa/story.py` (foto inteira sem corte sobre fundo desfocado da própria foto, "@davidsafotografia" + "NOIVOS · CIDADE" embaixo). Para outro casal, passe a legenda: `story(src, dst, "Nome & Nome · Cidade")`.
+- Salve em `davidsa/stories/AAAA-MM-DD/NN_FOTO.jpg`, commit + push e use a URL raw fixada no hash do commit.
+- Metricool: providers `[{"network":"instagram"}]`, instagramData `{"type":"STORY","collaborators":[],"showReelOnFeed":true}`, sem campo text.
+- Já agendados: 17/10 a 21/10.
+
 ## Como saber se a foto é horizontal ou vertical
 O Drive não informa as dimensões. Baixe cada foto com `download_file_content` (o resultado grande é salvo num arquivo .txt em JSON com o campo `content` em base64), decodifique com Python + PIL (`ImageOps.exif_transpose`) e leia largura x altura. Apague os arquivos depois. Dimensões já medidas ficam em `dimensoes_fotos.json`.
 Fotos verticais 2:3 são ajustadas pelo Instagram para 4:5 (limite da rede); horizontais 3:2 entram inteiras.
