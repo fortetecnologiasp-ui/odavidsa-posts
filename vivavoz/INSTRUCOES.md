@@ -44,4 +44,4 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Gerar com `python3 vivavoz/gerador/vv_story.py` (função `carrossel(pasta_slides, saida)`): 1080x1920, fundo = slide desfocado/escurecido, slide centralizado, "@vivavozcasamentos" embaixo.
 - Arquivos em `vivavoz/stories/AAAA-MM-DD/<slug>/NN.jpg`; commitar e usar a URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, `instagramData {"type":"STORY","collaborators":[],"showReelOnFeed":true}`, sem texto.
-- Status: stories já agendados de 16/10 a 20/10 (75 stories).
+- Status: stories já agendados de 16/10 a 27/10 (199 stories); carrosséis do feed até 27/10.
