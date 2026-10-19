@@ -4,132 +4,132 @@
   "video_origem": "VID-20260913-WA0060",
   "inicio_s": 7.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0061_a.m4a",
   "video_origem": "VID-20260913-WA0061",
   "inicio_s": 3.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0061_b.m4a",
   "video_origem": "VID-20260913-WA0061",
   "inicio_s": 17.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0062_a.m4a",
   "video_origem": "VID-20260913-WA0062",
   "inicio_s": 27.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0062_b.m4a",
   "video_origem": "VID-20260913-WA0062",
   "inicio_s": 4.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0063_a.m4a",
   "video_origem": "VID-20260913-WA0063",
   "inicio_s": 10.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0063_b.m4a",
   "video_origem": "VID-20260913-WA0063",
   "inicio_s": 63.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0064_a.m4a",
   "video_origem": "VID-20260913-WA0064",
   "inicio_s": 67.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0064_b.m4a",
   "video_origem": "VID-20260913-WA0064",
   "inicio_s": 99.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0065_a.m4a",
   "video_origem": "VID-20260913-WA0065",
   "inicio_s": 29.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0065_b.m4a",
   "video_origem": "VID-20260913-WA0065",
   "inicio_s": 91.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0072_a.m4a",
   "video_origem": "VID-20260913-WA0072",
   "inicio_s": 26.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0072_b.m4a",
   "video_origem": "VID-20260913-WA0072",
   "inicio_s": 6.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0073_a.m4a",
   "video_origem": "VID-20260913-WA0073",
   "inicio_s": 5.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0073_b.m4a",
   "video_origem": "VID-20260913-WA0073",
   "inicio_s": 37.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0078_a.m4a",
   "video_origem": "VID-20260913-WA0078",
   "inicio_s": 22.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0078_b.m4a",
   "video_origem": "VID-20260913-WA0078",
   "inicio_s": 9.0,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0093_a.m4a",
   "video_origem": "VID-20260913-WA0093",
   "inicio_s": 21.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  },
  {
   "arquivo": "vv0093_b.m4a",
   "video_origem": "VID-20260913-WA0093",
   "inicio_s": 35.5,
   "dur_s": 13,
-  "aprovada": null
+  "aprovada": true
  }
 ]

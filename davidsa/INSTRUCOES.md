@@ -26,6 +26,18 @@ Frase emocional com os nomes do casal (sem descrever o que a foto mostra), chama
 Hashtags: #casamento #fotografiadecasamento #noivos #<cidade> #weddingphotography #davidsafotografia
 Exemplo de legendas já usadas: `agenda_stephanie_alisson.json` (não repita as mesmas frases em sequência).
 
+## Reels (Instagram + Facebook)
+- Dos 10 horários do dia, **3 são Reels: 11:00, 15:30 e 20:00**. Os outros 7 continuam como foto.
+- **A regra de foto única vale para os Reels também**: cada foto vai para o feed OU para um Reels, nunca os dois, e entra em `publicadas.txt` (marque `reel` no fim da linha). Nunca usar foto já publicada.
+- Só para fotos de casais novos (a partir de 22/10/2026). Em dia de carrossel não há Reels.
+- Gerar com `python3 davidsa/reel.py FOTO.jpg davidsa/musicas/<trecho>.m4a saida.mp4 --gancho "<frase>" --legenda "Nome & Nome · Cidade"`:
+  12 s, zoom lento, **capa limpa (2 s só a foto)**, gancho de 2 s a 5,2 s, "@davidsafotografia" no final; o texto nunca fica sobre rostos (detector YuNet em `davidsa/modelos/`); foto horizontal fica inteira, com o texto no fundo desfocado.
+- Música: SOMENTE os trechos aprovados de `davidsa/musicas/musicas.json` (gravações ao vivo da Viva Voz, sem conversa). Revezar: não repetir o mesmo trecho no mesmo dia e usar todos antes de recomeçar.
+- Gancho: frase curta e genérica de emoção, sem inventar fatos do casal (ex.: "Tem momentos que a gente quer guardar para sempre", "Esse olhar diz tudo", "O dia em que o tempo parou"). Variar.
+- Salvar em `davidsa/reels/AAAA-MM-DD/HHMM_FOTO.mp4`, commit + push e usar a URL raw fixada no hash do commit.
+- Metricool: mesma legenda dos posts, acrescentando `🎵 Trilha: Viva Voz Casamentos ao vivo (@vivavozcasamentos)`. providers instagram + facebook, instagramData `{"type":"REEL","collaborators":[],"showReelOnFeed":true}`, facebookData `{"type":"REEL"}`.
+- Se o Metricool recusar o vídeo, agende aquela foto como post normal no mesmo horário e avise o David.
+
 ## Carrosséis
 Quando TODAS as fotos de um casal já tiverem sido agendadas como post único, criar carrosséis desse casal (até 10 fotos cada, separando horizontais de verticais; fotos podem se repetir nos carrosséis), nos mesmos horários.
 
