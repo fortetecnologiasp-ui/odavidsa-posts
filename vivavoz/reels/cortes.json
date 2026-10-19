@@ -1,0 +1,135 @@
+[
+ {
+  "video": "vivavoz/videos/vv0060.mp4",
+  "inicio": 7.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0061.mp4",
+  "inicio": 3.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-20"
+ },
+ {
+  "video": "vivavoz/videos/vv0061.mp4",
+  "inicio": 17.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-22"
+ },
+ {
+  "video": "vivavoz/videos/vv0062.mp4",
+  "inicio": 27.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-21"
+ },
+ {
+  "video": "vivavoz/videos/vv0062.mp4",
+  "inicio": 4.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0063.mp4",
+  "inicio": 10.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0063.mp4",
+  "inicio": 63.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0064.mp4",
+  "inicio": 67.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0064.mp4",
+  "inicio": 99.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0065.mp4",
+  "inicio": 29.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-27"
+ },
+ {
+  "video": "vivavoz/videos/vv0065.mp4",
+  "inicio": 91.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0072.mp4",
+  "inicio": 26.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-22"
+ },
+ {
+  "video": "vivavoz/videos/vv0072.mp4",
+  "inicio": 6.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-19"
+ },
+ {
+  "video": "vivavoz/videos/vv0073.mp4",
+  "inicio": 5.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0073.mp4",
+  "inicio": 37.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ },
+ {
+  "video": "vivavoz/videos/vv0078.mp4",
+  "inicio": 22.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-26"
+ },
+ {
+  "video": "vivavoz/videos/vv0078.mp4",
+  "inicio": 9.0,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-23"
+ },
+ {
+  "video": "vivavoz/videos/vv0093.mp4",
+  "inicio": 21.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": "2026-10-25"
+ },
+ {
+  "video": "vivavoz/videos/vv0093.mp4",
+  "inicio": 35.5,
+  "dur": 13,
+  "aprovado": true,
+  "usado_em": null
+ }
+]

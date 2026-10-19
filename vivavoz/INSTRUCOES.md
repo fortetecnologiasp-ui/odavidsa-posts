@@ -45,3 +45,17 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Arquivos em `vivavoz/stories/AAAA-MM-DD/<slug>/NN.jpg`; commitar e usar a URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, `instagramData {"type":"STORY","collaborators":[],"showReelOnFeed":true}`, sem texto.
 - Status: stories já agendados de 16/10 a 27/10 (199 stories); carrosséis do feed até 27/10.
+
+## Reels (Instagram) — 1 por dia às 18:00
+- Gerador: `python3 vivavoz/gerador/vv_reel.py` (1080x1920, capa limpa nos 2 primeiros segundos, texto numa faixa sem rosto, final com "@vivavozcasamentos" + "Solicite um orçamento sem compromisso").
+- Mistura por semana (7 dias): **5 "aovivo"** (corte de 13 s da banda tocando, som original), **1 "ab"** (dois cortes, "A ou B? comenta"), **1 "dica"** (slides de um carrossel de dica já publicado ANTES, com música de `davidsa/musicas/`).
+  - aovivo: `vv_reel.py aovivo VIDEO INICIO saida.mp4 --gancho "..."`
+  - ab: `vv_reel.py ab VIDEO_A INICIO_A VIDEO_B INICIO_B saida.mp4 --pergunta "..." --rotulo-a "..." --rotulo-b "..."`
+  - dica: `vv_reel.py dica vivavoz/AAAA-MM-DD/<slug> davidsa/musicas/<trecho>.m4a saida.mp4`
+- Cortes: SOMENTE os aprovados em `vivavoz/reels/cortes.json` (sem conversa, aprovados pelo David). Cada corte é usado UMA vez (preencha `usado_em`). Vídeos de origem em `vivavoz/videos/`.
+- Se sobrarem menos de 7 cortes livres, avise o David para mandar vídeos novos dos casamentos (os cortes de vídeo novo precisam ser aprovados por ele antes de usar).
+- Gancho: frase curta e verdadeira sobre o que aparece no vídeo (voz, violino, piano, noiva, altar). Nunca inventar nomes ou fatos.
+- Legenda: gancho + 1–2 frases + "💬 Solicite um orçamento sem compromisso: chama a gente no direct!" + hashtags (#casamento #musicaparacasamento #musicaaovivo #cerimonia #noivas #vivavozcasamentos + 1 específica).
+- Salvar em `vivavoz/reels/AAAA-MM-DD.mp4`, registrar em `vivavoz/reels/plano.json`, commit + push, URL raw fixada no hash do commit.
+- Metricool (brand 7401168): providers `[{"network":"instagram"}]`, instagramData `{"type":"REEL","collaborators":[],"showReelOnFeed":true}`. Testado e aceito em 18/10/2026.
+- Status: Reels agendados de 19/10 a 27/10/2026.
