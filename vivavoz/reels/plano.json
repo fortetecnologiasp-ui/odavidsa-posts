@@ -1,0 +1,72 @@
+[
+ {
+  "dia": "2026-10-19",
+  "modo": "aovivo",
+  "video": "vv0072",
+  "inicio": 6.0,
+  "gancho": "Quando a noiva aparece e a música é ao vivo ✨"
+ },
+ {
+  "dia": "2026-10-20",
+  "modo": "aovivo",
+  "video": "vv0061",
+  "inicio": 3.0,
+  "gancho": "Violino ao vivo na cerimônia. Aumenta o som 🎻"
+ },
+ {
+  "dia": "2026-10-21",
+  "modo": "aovivo",
+  "video": "vv0062",
+  "inicio": 27.0,
+  "gancho": "Voz ao vivo no seu casamento: arrepia ou não arrepia?"
+ },
+ {
+  "dia": "2026-10-22",
+  "modo": "ab",
+  "a": [
+   "vv0061",
+   17.0,
+   "Violino instrumental"
+  ],
+  "b": [
+   "vv0072",
+   26.5,
+   "Voz e violino"
+  ],
+  "pergunta": "Qual você escolheria para a sua cerimônia?"
+ },
+ {
+  "dia": "2026-10-23",
+  "modo": "aovivo",
+  "video": "vv0078",
+  "inicio": 9.0,
+  "gancho": "Toda noiva merece esse momento 🤍"
+ },
+ {
+  "dia": "2026-10-24",
+  "modo": "dica",
+  "pasta": "vivavoz/2026-10-20/checklist-60-dias",
+  "musica": "davidsa/musicas/vv0065_a.m4a"
+ },
+ {
+  "dia": "2026-10-25",
+  "modo": "aovivo",
+  "video": "vv0093",
+  "inicio": 21.5,
+  "gancho": "Voz, violino e piano ao vivo. Imagina no seu dia?"
+ },
+ {
+  "dia": "2026-10-26",
+  "modo": "aovivo",
+  "video": "vv0078",
+  "inicio": 22.5,
+  "gancho": "O sim com trilha sonora ao vivo 💍"
+ },
+ {
+  "dia": "2026-10-27",
+  "modo": "aovivo",
+  "video": "vv0065",
+  "inicio": 29.0,
+  "gancho": "Bastidores: é assim que a Viva Voz toca no seu casamento"
+ }
+]
