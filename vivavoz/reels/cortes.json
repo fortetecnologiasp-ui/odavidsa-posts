@@ -4,7 +4,7 @@
   "inicio": 7.5,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-02"
  },
  {
   "video": "vivavoz/videos/vv0061.mp4",
@@ -32,7 +32,7 @@
   "inicio": 4.0,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-07"
  },
  {
   "video": "vivavoz/videos/vv0063.mp4",
@@ -46,14 +46,14 @@
   "inicio": 63.0,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-04"
  },
  {
   "video": "vivavoz/videos/vv0064.mp4",
   "inicio": 67.0,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-04"
  },
  {
   "video": "vivavoz/videos/vv0064.mp4",
@@ -74,7 +74,7 @@
   "inicio": 91.0,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-03"
  },
  {
   "video": "vivavoz/videos/vv0072.mp4",
@@ -102,7 +102,7 @@
   "inicio": 37.5,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-05"
  },
  {
   "video": "vivavoz/videos/vv0078.mp4",
@@ -130,6 +130,6 @@
   "inicio": 35.5,
   "dur": 13,
   "aprovado": true,
-  "usado_em": null
+  "usado_em": "2026-11-08"
  }
 ]
