@@ -63,3 +63,6 @@ Fotos verticais 2:3 são ajustadas pelo Instagram para 4:5 (limite da rede); hor
 ## Situação (19/10/2026)
 - Marcela & Felipe (Espaço Beira Rio, São José dos Campos): 71 fotos — 37 posts de foto + 34 Reels de 22/10 a 02/11, 7 carrosséis (02/11 20:00 e 03/11), stories 10:00–10:05 de 22/10 a 03/11. Plano em `marcela_felipe_*.json`. Casal concluído.
 - Próximo horário livre: 04/11 08:00 (Laura & Renan quando tiverem fotos).
+
+## Situação (01/11/2026)
+- Sem fotos novas: Laura & Renan continua vazia e Marcela & Felipe / Stephanie & Alisson estão concluídos. Feed, Reels e stories cobertos só até 03/11. Próximo horário livre: 04/11 08:00.

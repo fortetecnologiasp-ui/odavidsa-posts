@@ -44,7 +44,7 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Gerar com `python3 vivavoz/gerador/vv_story.py` (função `carrossel(pasta_slides, saida)`): 1080x1920, fundo = slide desfocado/escurecido, slide centralizado, "@vivavozcasamentos" embaixo.
 - Arquivos em `vivavoz/stories/AAAA-MM-DD/<slug>/NN.jpg`; commitar e usar a URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, `instagramData {"type":"STORY","collaborators":[],"showReelOnFeed":true}`, sem texto.
-- Status: stories já agendados de 16/10 a 27/10 (199 stories); carrosséis do feed até 27/10.
+- Status: stories já agendados de 16/10 a 27/10 e de 02/11 a 08/11; carrosséis do feed até 08/11. (28/10 a 01/11 ficaram sem posts: a tarefa semanal não rodou.)
 
 ## Reels (Instagram) — 1 por dia às 18:00
 - Gerador: `python3 vivavoz/gerador/vv_reel.py` (1080x1920, capa limpa nos 2 primeiros segundos, texto numa faixa sem rosto, final com "@vivavozcasamentos" + "Solicite um orçamento sem compromisso").
@@ -58,4 +58,4 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Legenda: gancho + 1–2 frases + "💬 Solicite um orçamento sem compromisso: chama a gente no direct!" + hashtags (#casamento #musicaparacasamento #musicaaovivo #cerimonia #noivas #vivavozcasamentos + 1 específica).
 - Salvar em `vivavoz/reels/AAAA-MM-DD.mp4`, registrar em `vivavoz/reels/plano.json`, commit + push, URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, instagramData `{"type":"REEL","collaborators":[],"showReelOnFeed":true}`. Testado e aceito em 18/10/2026.
-- Status: Reels agendados de 19/10 a 27/10/2026.
+- Status: Reels agendados de 19/10 a 27/10 e de 02/11 a 08/11/2026. Restam só 3 cortes livres (vv0063@10, vv0064@99, vv0073@5.5): precisa de vídeos novos aprovados pelo David.
