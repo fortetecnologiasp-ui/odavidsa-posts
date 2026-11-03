@@ -1,4 +1,8 @@
-# Viva Voz Casamentos — carrosséis automáticos (@vivavozcasamentos)
+# Viva Voz Casamentos — @vivavozcasamentos
+
+> **PAUSADO desde 03/11/2026 (pedido do David): NÃO gere carrosséis nem stories da Viva Voz.**
+> Só continua o **Reels diário das 18:00** (seção "Reels" no fim deste arquivo). Os carrosséis e stories de 03/11 a 08/11 viraram rascunho no Metricool.
+> As seções de carrosséis e stories abaixo ficam só como referência, caso o David peça para voltar.
 
 ## Ritmo
 - **3 carrosséis por dia, todos os dias**, só no Instagram @vivavozcasamentos.
