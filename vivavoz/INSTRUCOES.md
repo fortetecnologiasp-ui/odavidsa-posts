@@ -62,4 +62,4 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Legenda: gancho + 1–2 frases + "💬 Solicite um orçamento sem compromisso: chama a gente no direct!" + hashtags (#casamento #musicaparacasamento #musicaaovivo #cerimonia #noivas #vivavozcasamentos + 1 específica).
 - Salvar em `vivavoz/reels/AAAA-MM-DD.mp4`, registrar em `vivavoz/reels/plano.json`, commit + push, URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, instagramData `{"type":"REEL","collaborators":[],"showReelOnFeed":true}`. Testado e aceito em 18/10/2026.
-- Status: Reels agendados de 19/10 a 27/10 e de 02/11 a 08/11/2026. Restam só 3 cortes livres (vv0063@10, vv0064@99, vv0073@5.5): precisa de vídeos novos aprovados pelo David.
+- Status (08/11/2026): Reels agendados de 19/10 a 27/10 e de 02/11 a 11/11/2026. Os 3 últimos cortes livres foram usados em 09–11/11 (aovivo). **Não há mais cortes livres**: precisa de vídeos novos aprovados pelo David antes de agendar a partir de 12/11.
