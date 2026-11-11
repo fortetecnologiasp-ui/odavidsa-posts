@@ -19,7 +19,7 @@ NOVAS = [
     ("estudio-celular", "50% 25%", 1.0), ("blazer-preto", "50% 20%", 1.0), ("camera", "50% 8%", 1.0),
     ("blazer-escritorio", "50% 20%", 1.0), ("jardim", "42% 0%", 1.0), ("parede-cinza", "50% 25%", 1.0), ("blazer-oculos", "50% 20%", 1.0),
     ("camiseta-azul", "50% 22%", 1.0), ("camiseta-marrom", "50% 22%", 1.0),
-    ("mao-no-queixo", "50% 25%", 1.0), ("palestra-tela", "inteira", 1.0), ("piscina", "42% 15%", 1.0),
+    ("mao-no-queixo", "50% 25%", 1.0), ("moeda-cinza", "50% 25%", 1.0), ("mao-no-queixo-pb", "50% 30%", 1.0), ("palestra-tela", "inteira", 1.0), ("piscina", "42% 15%", 1.0),
     ("palestra-casal", "inteira", 1.0), ("palestra-iluminacao", "inteira", 1.0),
 ]
 FOTOS_TODAS = FOTOS + [(UP + n + ".jpg", f, z) for n, f, z in NOVAS]
@@ -47,6 +47,29 @@ CTA_LEGENDA = "👉 Siga @odavidsa para mais conteúdo sobre marketing e relacio
 
 _rot = itertools.count()
 
+# Versão em inglês (só marketing): ver serie_en.py. Carrossel fica com 6 slides PT + 6 EN.
+try:
+    from serie_en import EN as _EN
+except ImportError:
+    _EN = {}
+
+CTA_EN = "👉 Follow @odavidsa for marketing tips every day."
+TAGS_EN = "#smallbusiness #marketingtips"
+LIMITE_LEGENDA = 500  # limite do Threads
+
+def legenda_bilingue(gancho, chamada, en, tags):
+    """Legenda PT + EN, no máximo 500 caracteres (Threads). Corta hashtags extras se passar."""
+    tags = list(tags) + [t for t in TAGS_EN.split() if t not in tags]
+    def monta(tg):
+        return (f"🇧🇷 {gancho}\n{chamada} 👇\n\n"
+                f"🇺🇸 {en['gancho']}\n{en['chamada']} 👇\n\n"
+                f"Arrasta pro lado · English version inside ➡️\n\n"
+                f"{CTA_LEGENDA}\n{CTA_EN}\n\n{' '.join(tg)}")
+    txt = monta(tags)
+    while len(txt) > LIMITE_LEGENDA and len(tags) > 3:
+        tags = tags[:-1]; txt = monta(tags)
+    return txt
+
 def X(serie, slug, tema, kicker, titulo, slides, pergunta, gancho, chamada, tags):
     s = SERIES[serie]
     f, foco, zoom = FOTOS[next(_rot) % len(FOTOS)]
@@ -55,11 +78,14 @@ def X(serie, slug, tema, kicker, titulo, slides, pergunta, gancho, chamada, tags
         if t not in _t: _t.append(t)
     legenda = (f"{gancho}\n\nArrasta pro lado e salva pra não esquecer.\n\n{chamada} 👇\n\n"
                f"{CTA_LEGENDA}\n\n{' '.join(_t)}")
+    en = _EN.get(slug) if serie == "mkt" else None
+    if en:
+        legenda = legenda_bilingue(gancho, chamada, en, _t)
     return {
         "slug": slug, "serie": serie, "foto": f, "foco": foco, "zoom": zoom, "tema": tema,
         "kicker": kicker, "titulo": titulo, "slides": slides, "pergunta": pergunta,
         "pill": s["pill"].format(tema=tema), "rodape": s["rodape"], "cta": s["cta"],
-        "fl": s["fl"], "fc": s["fc"], "css": s["css"], "ai": "", "legenda": legenda,
+        "fl": s["fl"], "fc": s["fc"], "css": s["css"], "ai": "", "legenda": legenda, "en": en,
     }
 
 def montar(mkt, rel, inicio, ndias, offset=0, fotos=None):

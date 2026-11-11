@@ -64,15 +64,26 @@ Depois de escrever o lote:
    - Corrija e renderize de novo se precisar.
 4. Faça commit e push para `main`, terminando a mensagem com as linhas de atribuição pedidas pela sessão.
 
+### Versão em inglês (só marketing, desde 12/11/2026)
+
+O David quer alcançar o público dos **Estados Unidos** com os carrosséis de marketing.
+
+- **Todo carrossel de marketing (`m0NN`) tem 12 slides no mesmo post:** os 6 em português e, em seguida, os mesmos 6 em inglês.
+- Para isso, escreva a versão em inglês de cada carrossel de marketing do lote em `gerador/serie_en.py`, no dicionário `EN`, com a mesma chave do slug: `E(tema, kicker, titulo, slides, pergunta, gancho, chamada)`. Tradução natural, para o público americano (nada de tradução literal; troque Pix por "payment links/cards", "associação comercial" por "chamber of commerce" etc.).
+- O `render.py` monta os 6 slides em inglês sozinho quando o carrossel tem `en`, e o `X()` troca a legenda pela versão bilíngue (🇧🇷 + 🇺🇸), com no máximo 500 caracteres.
+- Relacionamento (`r0NN`) continua só em português, com 6 slides.
+- No agendamento, carrossel de marketing vai com **12 URLs** (`01.jpg` a `12.jpg`); relacionamento com 6.
+- **Fotos:** sempre `montar(..., fotos=FOTOS_TODAS)`. Sem isso, o lote só usa as 6 fotos antigas e as fotos novas que o David manda nunca aparecem.
+
 ## Agendamento no Metricool
 
 O David assinou o plano **Starter** do Metricool: não há mais limite de 20 posts por mês. **Todos os 6 carrosséis de cada dia são agendados como automáticos.**
 
-1. Depois do push, pegue o hash do commit (`git rev-parse --short HEAD`). As URLs de mídia usam esse hash, não `main`, para evitar cache antigo da CDN: `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/<hash>/series/<dia>/<slug>/0N.jpg`, de 01 a 06.
+1. Depois do push, pegue o hash do commit (`git rev-parse --short HEAD`). As URLs de mídia usam esse hash, não `main`, para evitar cache antigo da CDN: `https://raw.githubusercontent.com/fortetecnologiasp-ui/odavidsa-posts/<hash>/series/<dia>/<slug>/NN.jpg`, de 01 a 06 (relacionamento) ou de 01 a 12 (marketing, com a versão em inglês).
 2. Use `getScheduledPosts` (blogId 7381311) para os dias novos e não duplique o que já existir.
 3. Agende cada carrossel com `createScheduledPost` nos horários **07:30, 11:00, 15:00, 16:30, 20:00 e 21:30** (na ordem do dia). Às 9h, 13h e 18h o David publica conteúdo próprio (Reels): nenhum post automático pode cair entre 8h e 10h, entre 12h e 14h ou entre 17h e 19h, todos os dias:
    - `date` = `"AAAA-MM-DDTHH:MM:00-03:00"`;
-   - `info` = `{"autoPublish":true,"descendants":[],"draft":false,"firstCommentText":"","hasNotReadNotes":false,"media":[6 URLs],"mediaAltText":[],"providers":[{"network":"instagram"},{"network":"linkedin"},{"network":"threads"}],"publicationDate":{"dateTime":"AAAA-MM-DDTHH:MM:00","timezone":"America/Sao_Paulo"},"shortener":false,"smartLinkData":{"ids":[]},"text":<legenda do carrossel>,"instagramData":{"type":"POST","collaborators":[],"showReelOnFeed":true},"linkedinData":{"type":"post","publishImagesAsPDF":false,"previewIncluded":true},"threadsData":{"replyControl":"EVERYONE","type":"POST","shareAsInstagramStory":false}}`.
+   - `info` = `{"autoPublish":true,"descendants":[],"draft":false,"firstCommentText":"","hasNotReadNotes":false,"media":[6 ou 12 URLs],"mediaAltText":[],"providers":[{"network":"instagram"},{"network":"linkedin"},{"network":"threads"}],"publicationDate":{"dateTime":"AAAA-MM-DDTHH:MM:00","timezone":"America/Sao_Paulo"},"shortener":false,"smartLinkData":{"ids":[]},"text":<legenda do carrossel>,"instagramData":{"type":"POST","collaborators":[],"showReelOnFeed":true},"linkedinData":{"type":"post","publishImagesAsPDF":false,"previewIncluded":true},"threadsData":{"replyControl":"EVERYONE","type":"POST","shareAsInstagramStory":false}}`.
    - Todo post vai para Instagram (carrossel), LinkedIn (galeria de imagens, não PDF) e Threads ao mesmo tempo.
    - Limite do Threads: a legenda inteira precisa ter no máximo 500 caracteres (conte com Python antes de agendar). Se passar, tire primeiro hashtags extras e depois a linha "Fonte:"; nunca tire o CTA "👉 Siga @odavidsa…".
 4. Se o Metricool recusar algum post, pare, registre quais ficaram de fora e avise o David.

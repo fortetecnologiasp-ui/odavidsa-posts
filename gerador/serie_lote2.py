@@ -1,7 +1,7 @@
 #  Lote 2: 05/11 a 14/11 — 30 marketing + 30 relacionamento
 import sys, os
 sys.path.insert(0, os.path.dirname(__file__))
-from serie_base import X, montar
+from serie_base import X, montar, FOTOS_TODAS
 from datetime import date
 
 MKT = [
@@ -550,5 +550,5 @@ X("rel","r060","Conversa","Check-in semanal",
   "Topam testar?","#comunicacao #casal"),
 ]
 
-DIAS = montar(MKT, REL, date(2026, 11, 5), 10, offset=4)
+DIAS = montar(MKT, REL, date(2026, 11, 5), 10, offset=4, fotos=FOTOS_TODAS)
 CARROSSEIS = [c for v in DIAS.values() for c in v]

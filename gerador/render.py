@@ -94,7 +94,7 @@ def cover(c, total):
   <div class="shade"></div>
   <div class="top"><span class="pill">{c.get('pill', 'Plano de governo · ' + c['tema'])}</span><span class="handle">{c.get('handle','@odavidsa')}</span></div>
   <div class="txt"><div class="kicker">{c['kicker']}</div><h1>{c['titulo']}</h1></div>
-  <div class="swipe"><span>{c.get('rodape', 'Flávio Bolsonaro · 2º turno')}</span><span>Arraste →</span></div>
+  <div class="swipe"><span>{c.get('rodape', 'Flávio Bolsonaro · 2º turno')}</span><span>{c.get('swipe','Arraste →')}</span></div>
 </div>""", c)
 
 def content(c, i, title, bullets, total):
@@ -120,6 +120,14 @@ def final(c, total):
   {c.get('ai', '<div class="ai">Conteúdo produzido com auxílio de inteligência artificial · @odavidsa</div>')}
 </div>""", c)
 
+def versao_en(c):
+    en = c["en"]
+    return dict(c, tema=en["tema"], kicker=en["kicker"], titulo=en["titulo"], slides=en["slides"],
+                pergunta=en["pergunta"], pill=f"EN · Marketing · {en['tema']}", rodape="Marketing & business",
+                swipe="Swipe →", cta="Save this post and send it to someone who needs to see it.",
+                fl="<strong>@odavidsa</strong> · Marketing, business and relationships.<br>New content every day.",
+                fc="@odavidsa · Marketing")
+
 def main(only=None):
     with sync_playwright() as p:
         br = p.chromium.launch()
@@ -129,7 +137,16 @@ def main(only=None):
             total = len(c["slides"]) + 2
             htmls = [cover(c, total)]
             htmls += [content(c, i+1, t, b, total) for i, (t, b) in enumerate(c["slides"])]
-            htmls.append(final(c, total))
+            if c.get("en"):
+                # versão em inglês no mesmo carrossel (6 PT + 6 EN)
+                pt = dict(c, fl=c["fl"] + "<br>English version on the next slide →")
+                htmls.append(final(pt, total))
+                e = versao_en(c)
+                htmls += [cover(e, total)]
+                htmls += [content(e, i+1, t, b, total) for i, (t, b) in enumerate(e["slides"])]
+                htmls.append(final(e, total))
+            else:
+                htmls.append(final(c, total))
             d = os.path.join(OUT, c["slug"]); os.makedirs(d, exist_ok=True)
             for n, h in enumerate(htmls, 1):
                 pg.set_content(h, wait_until="load")
