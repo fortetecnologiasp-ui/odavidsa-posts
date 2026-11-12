@@ -21,6 +21,8 @@ NOVAS = [
     ("camiseta-azul", "50% 22%", 1.0), ("camiseta-marrom", "50% 22%", 1.0),
     ("mao-no-queixo", "50% 25%", 1.0), ("moeda-cinza", "50% 25%", 1.0), ("mao-no-queixo-pb", "50% 30%", 1.0), ("palestra-tela", "inteira", 1.0), ("piscina", "42% 15%", 1.0),
     ("palestra-casal", "inteira", 1.0), ("palestra-iluminacao", "inteira", 1.0),
+    ("amarela-bandeira", "50% 28%", 1.0), ("amarela-mesa", "50% 28%", 1.0), ("preta-mesa", "50% 28%", 1.0),
+    ("cafe-falando", "50% 40%", 1.0), ("cafe-olhando", "50% 42%", 1.0), ("cafe-bebendo", "50% 42%", 1.0),
 ]
 FOTOS_TODAS = FOTOS + [(UP + n + ".jpg", f, z) for n, f, z in NOVAS]
 
