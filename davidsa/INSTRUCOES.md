@@ -69,3 +69,6 @@ Fotos verticais 2:3 são ajustadas pelo Instagram para 4:5 (limite da rede); hor
 
 ## Situação (08/11/2026)
 - Continua sem fotos novas: Laura & Renan vazia; Marcela & Felipe e Stephanie & Alisson concluídos (fotos únicas e carrosséis já feitos). Nada agendado depois de 03/11. Próximo horário livre: 09/11 08:00 (ou o primeiro horário livre quando chegarem fotos).
+
+## Situação (15/11/2026)
+- Continua sem fotos novas nas subpastas (Laura & Renan vazia; Marcela & Felipe e Stephanie & Alisson concluídos). Nada agendado depois de 03/11. Nada novo agendado nesta rodada.
