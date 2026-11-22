@@ -72,3 +72,6 @@ Fotos verticais 2:3 são ajustadas pelo Instagram para 4:5 (limite da rede); hor
 
 ## Situação (15/11/2026)
 - Continua sem fotos novas nas subpastas (Laura & Renan vazia; Marcela & Felipe e Stephanie & Alisson concluídos). Nada agendado depois de 03/11. Nada novo agendado nesta rodada.
+
+## Situação (22/11/2026)
+- Continua sem fotos novas nas subpastas (Laura & Renan vazia; Marcela & Felipe e Stephanie & Alisson concluídos). Nada agendado depois de 03/11. Nada novo agendado nesta rodada.

@@ -63,3 +63,4 @@ Antes de escrever os temas da semana, consulte `DATAS_COMEMORATIVAS.md` (raiz do
 - Salvar em `vivavoz/reels/AAAA-MM-DD.mp4`, registrar em `vivavoz/reels/plano.json`, commit + push, URL raw fixada no hash do commit.
 - Metricool (brand 7401168): providers `[{"network":"instagram"}]`, instagramData `{"type":"REEL","collaborators":[],"showReelOnFeed":true}`. Testado e aceito em 18/10/2026.
 - Status (08/11/2026): Reels agendados de 19/10 a 27/10 e de 02/11 a 11/11/2026. Os 3 últimos cortes livres foram usados em 09–11/11 (aovivo). **Não há mais cortes livres**: precisa de vídeos novos aprovados pelo David antes de agendar a partir de 12/11.
+- Status (22/11/2026): continua sem cortes livres em `cortes.json` (todos com `usado_em`). Nenhum Reels novo agendado; último Reels em 11/11. Aguardando vídeos novos aprovados pelo David.
